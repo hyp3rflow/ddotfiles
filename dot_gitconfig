@@ -1,0 +1,7 @@
+[user]
+	email = flow@hrmm.xyz
+	name = Yongwook Choi
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
