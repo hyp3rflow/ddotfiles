@@ -50,7 +50,7 @@ command -v deno >/dev/null 2>&1 || \
 
 # Install coursier
 command -v cs >/dev/null 2>&1 || \
-  (echo '👊  Installing coursier' && brew install couriser && cs setup)
+  (echo '👊  Installing coursier' && brew install coursier && cs setup)
 
 echo ""
 echo "Done."
