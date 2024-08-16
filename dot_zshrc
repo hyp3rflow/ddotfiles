@@ -103,6 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# brew
+eval "$(homebrew/bin/brew shellenv)"
+
 # add fpath for asdf completion
 fpath=(${ASDF_DIR}/completions $fpath)
 
