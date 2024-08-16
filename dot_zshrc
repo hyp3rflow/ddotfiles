@@ -39,4 +39,19 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+# local bin path
 export PATH=$HOME/bin:$PATH
+# coursier
+export PATH=$HOME/.local/share/coursier/bin:$PATH
+
+# asdf
+. "$HOME/.asdf/asdf.sh"
+
+# esmeta
+export ESMETA_HOME=~/plrg/esmeta
+export PATH=$ESMETA_HOME/bin:$PATH # for executables `esmeta` and etc.
+source $ESMETA_HOME/.completion # for auto-completion
+
+# jvm memory config
+export JAVA_OPTS="-Xms64g -Xmx64g -Xss1g"
+
