@@ -49,7 +49,7 @@ command -v deno >/dev/null 2>&1 || \
   (echo '👊  Installing deno' && asdf install deno latest && asdf global deno latest)
 
 # Install coursier
-command -v chezmoi >/dev/null 2>&1 || \
+command -v cs >/dev/null 2>&1 || \
   (echo '👊  Installing coursier' && brew install couriser && cs setup)
 
 echo ""
