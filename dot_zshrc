@@ -105,6 +105,9 @@ source $ZSH/oh-my-zsh.sh
 
 export LC_ALL="en_US.UTF-8"
 
+# brew
+eval "$(homebrew/bin/brew shellenv)"
+
 # add fpath for asdf completion
 fpath=(${ASDF_DIR}/completions $fpath)
 
@@ -118,7 +121,7 @@ export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/share/coursier/bin:$PATH
 
 # asdf
-. "$HOME/.asdf/asdf.sh"
+command -v asdf >/dev/null 2>&1 || . "$HOME/.asdf/asdf.sh"
 
 # esmeta
 export ESMETA_HOME=~/plrg/esmeta

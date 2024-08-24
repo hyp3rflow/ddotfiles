@@ -7,7 +7,7 @@ dotfiles, managed with [chezmoi](https://github.com/twpayne/chezmoi).
 This will install Homebrew and chezmoi. After installation `chezmoi` will be initialized.
 
 ```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/hyp3rflow/ddotfiles/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/hyp3rflow/ddotfiles/main/install.sh)"
 ```
 
 ## Manual install
